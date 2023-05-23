@@ -76,8 +76,9 @@ const Form = () => {
       <div className="container">
         <form>
           <div className="form-text">
-            <label htmlFor="user-name" className="form-label"><IoMdPerson/></label>
+            <label className="form-label"><IoMdPerson/></label>
             <input
+              autoComplete="off"
               type="text"
               className="form-control"
               id="user-name"
@@ -87,8 +88,9 @@ const Form = () => {
             />
           </div>
           <div className="form-text">
-            <label htmlFor="user-email" className="form-label">< IoMdMail/></label>
+            <label className="form-label">< IoMdMail/></label>
             <input
+              autoComplete="off"
               type="email"
               className="form-control"
               id="user-email"
@@ -98,8 +100,9 @@ const Form = () => {
             />
           </div>
           <div className="form-text">
-            <label htmlFor="user-phone" className="form-label">< IoMdCall/></label>
+            <label className="form-label">< IoMdCall/></label>
             <input
+              autoComplete="off"
               type="tel"
               className="form-control"
               id="user-phone"
@@ -109,7 +112,7 @@ const Form = () => {
             />
           </div>
           <div className="form-text">
-            <label htmlFor="user-gender" className="form-label">< IoMaleFemale/></label>
+            <label className="form-label">< IoMaleFemale/></label>
             <Dropdown
               name={gender}
               toggleGender={handleGenderChange}
@@ -118,9 +121,14 @@ const Form = () => {
             />
           </div>
 
-          <button type="submit" className="btn">
+          <div className="form-text">
+            <label className="form-label hidden">< IoMaleFemale/></label>
+            <button type="submit" className="btn">
             Submit
           </button>
+          </div>
+
+          
         
         </form>
       </div>

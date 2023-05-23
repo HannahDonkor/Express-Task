@@ -1,0 +1,12 @@
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 858px){
+    .content {
+       flex-direction: column;
+    }
+
+}

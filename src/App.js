@@ -1,5 +1,5 @@
 import React from "react"
-import Form from "./Components/Form/Form"
+import Content from "./Components/Content/Content"
 import Navbar from "./Components/Navbar/Navbar"
 
 const App = () => {
@@ -7,8 +7,8 @@ const App = () => {
   return (
     <>
     <Navbar />
-    <Form />
-    
+    <Content />
+   
     </>
 
   )
